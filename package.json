@@ -18,6 +18,7 @@
         "js:dev": "npm-run-all --sequential js:browserify js:babel",
         "watch:js": "onchange ./_js/*.js --initial --poll 50 --delay 0 --await-write-finish 50 -- npm run js:dev",
         "dev": "npm-run-all --parallel watch:*",
+        "build": "npm-run-all --parallel js",
         "prod": "npm-run-all --parallel js"
     },
     "dependencies": {
