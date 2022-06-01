@@ -1,0 +1,41 @@
+{
+    "chefcookie": {
+        "detectors": [
+            {
+                "presentMatcher": {
+                    "target": {
+                        "selector": "#cc-banner"
+                    },
+                    "type": "css"
+                },
+                "showingMatcher": {
+                    "target": {
+                        "displayFilter": true,
+                        "selector": "#cc-banner"
+                    },
+                    "type": "css"
+                }
+            }
+        ],
+        "methods": [
+            {
+                "action": {
+                    "target": {
+                        "selector": "#cc-banner"
+                    },
+                    "type": "hide"
+                },
+                "name": "HIDE_CMP"
+            },
+            {
+                "action": {
+                    "target": {
+                        "selector": ".chefcookie__button--settings"
+                    },
+                    "type": "click"
+                },
+                "name": "OPEN_OPTIONS"
+            }
+        ]
+    }
+}
